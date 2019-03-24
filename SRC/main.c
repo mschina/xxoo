@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SWAP(A,B)	{A=A^B^A;B=A^B^B}
+#define SWAP(A,B)	{A=A^B^A;B=A^B^B;}
 
 
 int main(void)
