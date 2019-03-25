@@ -1,12 +1,16 @@
-#include <stdio.h>
+#include <reg52.h>
+#include <INTRINS.H>
+#include "lcd.h"
+#include "delay.h"
+#include "DHT11.h"
 
-#define SWAP(A,B)	{A=A^B^A;B=A^B^B;}
 
 
-int main(void)
+
+void main(void)
 {
-	int a=100,b=290;
-	SWAP(a,b);
-	printf(a,b);
-	return 0;
+	SP=0x80;
+	DelayInit();
+	P0=0x00;
+	while(1);
 }
